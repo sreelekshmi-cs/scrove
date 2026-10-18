@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scorve</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="product.js" defer></script>
+</head>
+<body>
+
+    <!--navbarr-->
+<header class="navbar">
+    <a href="index.html" class="logo">SCORVE</a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#new-collection">New Collection</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+    <header class="shop-hero">
+        <p>DISCOVER YOUR STYLE</p>
+        <h1>The Fashion Edit</h1>
+        <span>Find pieces that feel like you.</span>
+    </header>
+
+    <main class="shop-container">
+
+        <div class="shop-heading">
+            <div>
+                <p class="small-title">OUR COLLECTION</p>
+                <h2>Shop All Products</h2>
+            </div>
+            <p id="productCount">20 Products</p>
+        </div>
+
+        <div class="filter-area">
+
+            <input type="search" id="searchInput"
+                   placeholder="Search products...">
+
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Dresses">Dresses</option>
+                <option value="Bags">Bags</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Perfume">Perfume</option>
+            </select>
+
+            <select id="genderFilter">
+                <option value="">All Genders</option>
+                <option value="Women">Women</option>
+                <option value="Men">Men</option>
+            </select>
+
+            <select id="colorFilter">
+                <option value="">All Colours</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Pink">Pink</option>
+                <option value="Beige">Beige</option>
+                <option value="Brown">Brown</option>
+            </select>
+
+            <select id="sortFilter">
+                <option value="">Sort By</option>
+                <option value="lowToHigh">Price: Low to High</option>
+                <option value="highToLow">Price: High to Low</option>
+            </select>
+
+            <button type="button" id="clearButton">Clear Filters</button>
+        </div>
+
+        <div id="productList" class="product-list"></div>
+
+        <p id="noProducts">No products found. Try another search.</p>
+
+    </main>
+
+        
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>SCORVE</h2>
+                <p>Fashion for every you ♡</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#new-collection">New Collection</a>
+                <a href="#about">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <div class="footer-news">
+                <h3>Stay in the Loop</h3>
+                <p>Discover new styles and latest collections.</p>
+
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SCORVE. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

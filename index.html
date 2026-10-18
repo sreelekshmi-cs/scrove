@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORVE</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Offer Bar -->
+    <div class="offer-bar" id="offerBar">
+        <p>SCORVÉ | A LITTLE LUXURY, JUST FOR YOU — ENJOY 20% OFF YOUR FIRST ORDER</p>
+        <button onclick="closeOffer()">×</button>
+    </div>
+    
+    <!--navbarr-->
+<header class="navbar">
+    <a href="index.html" class="logo">SCORVE</a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#new-collection">New Collection</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+<section class="home-hero">
+
+    <img src="./lisa1.png"
+         class="hero-bg"
+         alt="Fashion Brand">
+
+    <div class="hero-title">
+        <h1 class="left">FASHION</h1>
+    </div>
+
+    <div class="product-slider">
+        <div class="product-track">
+
+            <img src="./slide2.jpg" alt="Fashion Product">
+            <img src="./slide3.jpg" alt="Fashion Product">
+            <img src="./slide4.jpg" alt="Fashion Product">
+            <img src="./slide5.jpg" alt="Fashion Product">
+            <img src="./slide6.jpg" alt="Fashion Product">
+            <img src="./slide10.jpg" alt="Fashion Product">
+
+            <img src="./slide9.jpg" alt="Fashion Product">
+            <img src="./slide11.jpg" alt="Fashion Product">
+            <img src="./slide12.jpg" alt="Fashion Product">
+            <img src="./slide7.jpg" alt="Fashion Product">
+            <img src="./slide8.jpg" alt="Fashion Product">
+            <img src="./slide10.jpg" alt="Fashion Product">
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Fashion Slider -->
+    <section class="hero-slider">
+
+        <div class="slide active" style="background-image: url('./images/slide60.avif');">
+            <div class="slide-content">
+                <p>THE NEW COLLECTION</p>
+                <h1>Discover Your Signature Style</h1>
+                <a href="product.html">SHOP NOW</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./images/slide40.avif');">
+            <div class="slide-content">
+                <p>TIMELESS ELEGANCE</p>
+                <h1>Luxury That Defines You</h1>
+                <a href="product.html">EXPLORE NOW</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./images/slide100.avif');">
+            <div class="slide-content">
+                <p>YOUR STYLE, YOUR STORY</p>
+                <h1>Wear Your Confidence</h1>
+                <a href="product.html">DISCOVER MORE</a>
+            </div>
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+
+    </section>
+
+    <!-- Our Collections -->
+    <section class="collections" id="collections">
+
+        <h2>Our Collections</h2>
+        <p>Explore our latest fashion collections</p>
+
+        <div class="collection-slider">
+
+            <button class="slide-btn" id="prevBtn">&#10094;</button>
+
+            <div class="collection-window">
+                <div class="collection-track" id="collectionTrack">
+
+                    <div class="collection-card">
+                        <img src="./p1.jpg" alt="Women's Wear">
+                        <h3>Women's Wear</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./old-money-4.jpg" alt="Casual Wear">
+                        <h3>Casual Wear</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./luxury-dress-4.jpg" alt="Party Wear">
+                        <h3>Party Wear</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./woody-fragrance.jpg" alt="New Arrivals">
+                        <h3>New Arrivals</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./jewellery-4.jpg" alt="Accessories">
+                        <h3>Accessories</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./jewellery-3.jpg" alt="Jewellery">
+                        <h3>Jewellery</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./contactus.jpg" alt="Perfumes">
+                        <h3>Perfumes</h3>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="./mini-bag.jpg" alt="Bags">
+                        <h3>Bags</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="slide-btn" id="nextBtn">&#10095;</button>
+
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+
+        <h1>Brands We <span>Love</span></h1>
+
+        <div class="brand-grid">
+
+            <div class="brand-card">
+                <div class="circle">
+                    <img src="./nike.png" alt="Nike">
+                </div>
+                <div>
+                    <h2>NIKE</h2>
+                    <p>Sport-inspired fashion for every day.
+                        Designed for comfort and performance.
+                        Style that moves with you.
+                        Perfect for active lifestyles.
+                        Innovation meets modern fashion.
+                        Style that moves with you.</p>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="circle">
+                    <img src="./zara.png" alt="Zara">
+                </div>
+                <div>
+                    <h2>ZARA</h2>
+                    <p>Modern fashion with a timeless touch.
+                        Elegant designs for every occasion.
+                        Style that speaks for itself.
+                        Discover the latest trends.
+                        Simplicity meets sophistication.</p>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="circle">
+                    <img src="./dior.png" alt="Dior">
+                </div>
+                <div>
+                    <h2>DIOR</h2>
+                    <p>A symbol of timeless luxury.
+                        Creative designs with elegant details.
+                        Fashion crafted with sophistication.
+                        Inspired by art and beauty.
+                        Elegance in every creation.</p>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="circle">
+                    <img src="./pnda.png" alt="Prada">
+                </div>
+                <div>
+                    <h2>PRADA</h2>
+                    <p>Bold fashion with a modern edge.
+                        Unique designs that stand out.
+                        Luxury meets contemporary style.
+                        Creativity inspires every collection.
+                        Redefining modern elegance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- New Collection -->
+    <section class="new-collection" id="new-collection">
+
+        <h1>New Collection</h1>
+        <p>Discover Your Signature Style</p>
+
+        <div class="collection-container">
+
+            <div class="card">
+                <img src="./old-money-1.jpg" alt="Men's Casual">
+                <h3>Men's Casual</h3>
+                <p>Comfortable everyday outfit</p>
+                <p>Colour: Black, White, Beige</p>
+                <p class="rating">★★★★★ (4.8)</p>
+                <h4>₹1,499</h4>
+            </div>
+
+            <div class="card">
+                <img src="./old-money-3.jpg" alt="Women's Casual">
+                <h3>Women's Casual</h3>
+                <p>Simple and stylish look</p>
+                <p>Colour: Cream, Brown, Black</p>
+                <p class="rating">★★★★★ (4.7)</p>
+                <h4>₹1,799</h4>
+            </div>
+
+            <div class="card">
+                <img src="./jewellery-2.jpg" alt="Casual Jewellery">
+                <h3>Casual Jewellery</h3>
+                <p>Perfect for daily wear</p>
+                <p>Colour: Gold, Silver, Rose Gold</p>
+                <p class="rating">★★★★★ (4.6)</p>
+                <h4>₹799</h4>
+            </div>
+
+            <div class="card">
+                <img src="./c8.jpg" alt="Traditional Jewellery">
+                <h3>Traditional Jewellery</h3>
+                <p>Elegant traditional designs</p>
+                <p>Colour: Gold, Antique Gold</p>
+                <p class="rating">★★★★★ (4.9)</p>
+                <h4>₹1,299</h4>
+            </div>
+
+            <div class="card">
+                <img src="./lily-fragrance.jpg" alt="Luxury Perfume">
+                <h3>Luxury Perfume</h3>
+                <p>Long-lasting fragrance</p>
+                <p>Colour: Amber, Black, Clear</p>
+                <p class="rating">★★★★★ (4.8)</p>
+                <h4>₹1,099</h4>
+            </div>
+
+            <div class="card">
+                <img src="./classic-handbag.jpg" alt="Luxury Bags">
+                <h3>Luxury Bags</h3>
+                <p>Elegant bags for every occasion</p>
+                <p>Colour: Black, Tan, Burgundy</p>
+                <p class="rating">★★★★★ (4.7)</p>
+                <h4>₹2,499</h4>
+            </div>
+
+            <div class="card">
+                <img src="./luxury-dress-3.jpg" alt="Women's Luxury">
+                <h3>Women's Luxury</h3>
+                <p>Elegant and premium style</p>
+                <p>Colour: Black, Wine, Cream</p>
+                <p class="rating">★★★★★ (4.9)</p>
+                <h4>₹3,499</h4>
+            </div>
+
+            <div class="card">
+                <img src="./men bergnedy.jpg" alt="Men's Luxury">
+                <h3>Men's Luxury</h3>
+                <p>Modern and classy outfit</p>
+                <p>Colour: Black, Navy, Beige</p>
+                <p class="rating">★★★★★ (4.8)</p>
+                <h4>₹2,999</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="service-section">
+
+        <div class="service-image">
+            <img src="./ab.jpg" alt="Luxury Fashion">
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <h2>24/7 Support</h2>
+                <p>We are always here to help you.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Premium Quality</h2>
+                <p>Experience fashion with the finest quality.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Free Delivery</h2>
+                <p>Enjoy free delivery on your orders.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Easy Returns</h2>
+                <p>Shop with confidence and ease.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Most Wanted -->
+    <section class="new-collection" id="most-wanted">
+
+        <h1>Most Wanted</h1>
+        <p>Our most-loved style</p>
+
+        <div class="collection-container">
+
+            <div class="card">
+                <img src="./old-money-2.jpg" alt="Men's Casual">
+                <h3>Men's Casual</h3>
+                <p>Comfortable everyday outfit</p>
+                <p>Colour: Black, White, Beige</p>
+                <p class="rating">★★★★★ (4.8)</p>
+                <h4>₹1,499</h4>
+            </div>
+
+            <div class="card">
+                <img src="./old-money-4.jpg" alt="Women's Casual">
+                <h3>Women's Casual</h3>
+                <p>Simple and stylish look</p>
+                <p>Colour: Cream, Brown, Black</p>
+                <p class="rating">★★★★★ (4.7)</p>
+                <h4>₹1,799</h4>
+            </div>
+
+            <div class="card">
+                <img src="./slide5.jpg" alt="Casual Jewellery">
+                <h3>Casual Jewellery</h3>
+                <p>Perfect for daily wear</p>
+                <p>Colour: Gold, Silver, Rose Gold</p>
+                <p class="rating">★★★★★ (4.6)</p>
+                <h4>₹799</h4>
+            </div>
+
+            <div class="card">
+                <img src="./c8.jpg" alt="Traditional Jewellery">
+                <h3>Traditional Jewellery</h3>
+                <p>Elegant traditional designs</p>
+                <p>Colour: Gold, Antique Gold</p>
+                <p class="rating">★★★★★ (4.9)</p>
+                <h4>₹1,299</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Growth -->
+    <section class="growth" id="growth">
+
+        <div class="growth-info">
+            <p class="tagline">OUR FASHION JOURNEY</p>
+            <h2>Style that keeps growing.</h2>
+            <p>A little look at our fashion journey.</p>
+
+            <div class="stats">
+
+                <div>
+                    <h3>08+</h3>
+                    <p>Style Categories</p>
+                </div>
+
+                <div>
+                    <h3>12+</h3>
+                    <p>Featured Styles</p>
+                </div>
+
+                <div>
+                    <h3>04</h3>
+                    <p>Brand Highlights</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="graph">
+            <h3>Growth Over Time</h3>
+
+            <svg class="growth-chart" viewBox="0 0 360 230">
+
+                <g class="grid">
+                    <line x1="45" y1="20" x2="345" y2="20"/>
+                    <line x1="45" y1="41" x2="345" y2="41"/>
+                    <line x1="45" y1="63" x2="345" y2="63"/>
+                    <line x1="45" y1="84" x2="345" y2="84"/>
+                    <line x1="45" y1="106" x2="345" y2="106"/>
+                    <line x1="45" y1="127" x2="345" y2="127"/>
+                    <line x1="45" y1="149" x2="345" y2="149"/>
+                    <line x1="45" y1="170" x2="345" y2="170"/>
+                </g>
+
+                <g class="y-labels">
+                    <text x="35" y="24">175</text>
+                    <text x="35" y="45">150</text>
+                    <text x="35" y="67">125</text>
+                    <text x="35" y="88">100</text>
+                    <text x="35" y="110">75</text>
+                    <text x="35" y="131">50</text>
+                    <text x="35" y="153">25</text>
+                    <text x="35" y="174">0</text>
+                </g>
+
+                <path class="axis" d="M45 20 V170 H345"/>
+
+                <g class="x-labels">
+                    <text x="45" y="193">Jan</text>
+                    <text x="95" y="193">Feb</text>
+                    <text x="145" y="193">Mar</text>
+                    <text x="195" y="193">Apr</text>
+                    <text x="245" y="193">May</text>
+                    <text x="295" y="193">Jun</text>
+                    <text x="345" y="193">Jul</text>
+                </g>
+
+                <path class="line" d="M45 170 L95 131 L145 135 L195 93 L245 97 L295 54 L345 29"/>
+
+            </svg>
+
+            <p class="graph-note">Illustrative growth data</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>SCORVE</h2>
+                <p>Fashion for every you ♡</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#new-collection">New Collection</a>
+                <a href="#about">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <div class="footer-news">
+                <h3>Stay in the Loop</h3>
+                <p>Discover new styles and latest collections.</p>
+
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SCORVE. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
